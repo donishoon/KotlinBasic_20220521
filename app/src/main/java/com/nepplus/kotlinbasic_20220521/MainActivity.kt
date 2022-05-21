@@ -49,10 +49,27 @@ class MainActivity : AppCompatActivity() {
             Log.d("변수", name1)   // 내부에 들어있는 "박철수" 출력
             Log.d("변수", name2)
 
+            val address = "서울시 동대문구"
+
+            Toast.makeText(this, address, Toast.LENGTH_SHORT).show()
 
         }
 
 
+        btnCondition.setOnClickListener {
+
+            val userAge = 15 // Int 형태 (자동추론 정수니까 )
+
+//            나이의 값이 20살 이상잉라면? => "성인입니다." 토스트로
+            if ( userAge >= 20 ) {
+
+                Toast.makeText(this, "성인입니다.", Toast.LENGTH_SHORT).show()
+            }
+//            그렇지 않다면? => "미성년자입니다." 토스트로
+            else {
+                Toast.makeText(this, "미성년자입니다.", Toast.LENGTH_SHORT).show()
+            }
+        }
 
     }
 }
