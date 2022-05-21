@@ -109,5 +109,17 @@ class MainActivity : AppCompatActivity() {
 
         }
 
+//        복사 버튼이 눌리면 -> 입력된 내용을 받아서 -> 텍스트뷰에 반영
+
+        btnCopy.setOnClickListener {
+
+//            (edtMessage에) 입력된 내용(text속성에 들어있는 값)을 기억해야 -> 텍스트뷰에 적을 수 있다.]
+//            변수에 담아두자.
+
+            val inputMessage = edtMessage.text.toString()
+
+            txtMessage.text = inputMessage
+
+        }
     }
 }
