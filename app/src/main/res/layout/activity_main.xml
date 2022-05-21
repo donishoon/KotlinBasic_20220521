@@ -32,4 +32,24 @@
         android:layout_height="wrap_content"
         android:text="조건문 문법 연습" />
 
+    <EditText
+        android:id="@+id/edtMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="아무 말이나 입력하세요."/>
+
+    <Button
+        android:id="@+id/btnCopy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="문구 옮겨적기"/>
+
+    <TextView
+        android:id="@+id/txtMessage"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="위의 문구가 여기에 옮겨집니다."
+        android:textSize="20sp"/>
+
 </LinearLayout>
